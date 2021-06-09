@@ -1,6 +1,5 @@
 package com.class01;
 
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -9,7 +8,7 @@ public class Class1 {
     public void beforeTestMethod(){
         System.out.println("I am before method");
     }
-    @Test
+    @Test (groups = "regression")
     public void bclass(){
         System.out.println("I an b test");
     }
@@ -17,9 +16,5 @@ public class Class1 {
     public void cclass(){
         System.out.println("I an c test");
     }
-
-
-
-
 
 }

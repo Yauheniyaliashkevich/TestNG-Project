@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite for smoke and regression test">
+    
+    <listeners>
+        <listener class-name="com.class04.Listeners"></listener>
+    </listeners>
+
+    <test name="Parallel Test" parallel="methods" thread-count="3" >
+        <classes>
+            <class name="com.class04.ParallelTest"/>
+        </classes>
+    </test>
+
+    <!--<test verbose="2" preserve-order="true" name="Test execution 1" parallel="methods" thread-count="2">
+        <classes>
+            <class name="com.class04.ParallelTest"/>
+        </classes>
+    </test>-->
+
+   <!-- <test verbose="2" preserve-order="true" name="Test execution 2" parallel="methods" thread-count="2">
+        <classes>
+            <class name="com.class01.BeforeAndAfterMethod"/>
+        </classes>
+    </test>-->
+
+
+    <!-- <test verbose="2" preserve-order="true"
+           name="Tests for regression test cases">
+         <groups>
+             <run>
+                 <include name = "regression"/>
+             </run>
+         </groups>
+         <packages>
+             <package name ="com.class03"></package>
+             <package name ="com.class02"></package>
+             <package name ="com.class01"></package>
+         </packages>
+     </test>-->
+</suite>

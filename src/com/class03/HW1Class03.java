@@ -12,7 +12,7 @@ import org.testng.asserts.SoftAssert;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class HW1 {
+public class HW1Class03 {
     /*
     HRMS Add Employee:
 Open chrome browser

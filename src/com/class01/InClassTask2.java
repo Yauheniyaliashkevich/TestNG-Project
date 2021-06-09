@@ -1,6 +1,5 @@
 package com.class01;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 public class InClassTask2 {
@@ -22,7 +21,4 @@ public class InClassTask2 {
     @AfterClass
     public void afterClass(){ System.out.println("I am after class");
     }
-
-
-
 }

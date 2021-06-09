@@ -3,7 +3,6 @@ package com.class01;
 import org.testng.annotations.*;
 
 public class PreAndPostCondition {
-
     @BeforeMethod
     public void beforeEveryTestMethod(){
         System.out.println("I am before method function will be execute before every test");

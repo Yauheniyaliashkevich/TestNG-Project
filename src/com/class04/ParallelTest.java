@@ -1,4 +1,4 @@
-package com.class01;
+package com.class04;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,13 +7,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import utils.CommonMethods;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginTest1 {
-    public WebDriver driver;
-
-    @BeforeTest
+public class ParallelTest extends CommonMethods {
+    //public WebDriver driver;
+   /* @BeforeTest
     public void openBrowserAndLaunchApp(){
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
         driver=new ChromeDriver();
@@ -21,8 +21,11 @@ public class LoginTest1 {
         //launch the application
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-    }
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    }*/
+
+
+
 
     @Test
     public void validLogin(){
@@ -54,11 +57,15 @@ public class LoginTest1 {
         }
     }
 
-    @AfterTest
+    @Test
+    public void anotherTest (){
+        System.out.println("Just ...");
+    }
+
+    /*@AfterTest
     public void tearDown(){
         driver.close();
     }
-
-
+*/
 
 }
